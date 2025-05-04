@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Website - Shopping Cart</title>
-    <!----Link To CSS----->
-    <link rel="stylesheet" href="css/style.css">
-    <!---Box Icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
 
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!---Header--->
-<header>
-    <!----Nav---->
+
+  <!-- Header -->
+  <header>
     <div class="nav container">
-      <a href="#" class="logo">Ecommerce</a>
-      <!----Cart-Icon---->
+      <a href="#" class="logo">NIKE</a>
       <i class='bx bx-shopping-bag' id="cart-icon"></i>
-      <!---Cart--->
-    <div class="cart">
-      <h2 class="cart-tittle">Your Cart</h2>
-      <!---Content-->
-      <div class="cart-content">
-        
-      </div>
-      <!---Total-->
-      <div class="total">
-        <div class="total-tittle">Total</div>
-        <div class="total-price">$0</div>
-      </div>
-      <!---Buy Button-->
-      <button type="button" class="btn-buy">Buy Now</button>
-      <!---Cart Close-->
-      <i class='bx bx-x' id="close-cart"></i>
-    </div>
     </div>
   </header>
-<!---Shop---->
+
+  <!-- Cart -->
+  <div class="cart">
+    <h2 class="cart-tittle">Your Cart</h2>
+    <div class="cart-content">
+      <!-- Cart items will be inserted dynamically -->
+    </div>
+    <div class="total">
+      <div class="total-tittle">Total:</div>
+      <div class="total-price">$0</div>
+    </div>
+    <button class="btn-buy">Buy Now</button>
+    <i class='bx bx-x' id="close-cart"></i>
+  </div>
+
+  <!-- Shop Section -->
   <section class="shop container">
-    <h2 class="section-tittle">Shop Products</h2>
-    <!----Content---->
+    <h2 class="section-tittle">Products</h2>
     <div class="shop-content">
-      <!----Box 1---->
+
+      <!-- Product 1 -->
       <div class="product-box">
-        <img src="products/blazer.jpg" class="product-img">
+        <img src="products/blazer.jpg" alt="Product 1" class="product-img">
         <h2 class="product-tittle">Nike Blazer</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
+        <span class="price">$105</span>
+        <i class='bx bx-cart add-cart'></i>
       </div>
-      <!----Box 2---->
+
+      <!-- Product 2 -->
       <div class="product-box">
-        <img src="products/airmax.jpg" class="product-img">
-        <h2 class="product-tittle">Nike AirMax</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
+        <img src="products/airmax.jpg" alt="Product 2" class="product-img">
+        <h2 class="product-tittle">AirMax</h2>
+        <span class="price">$195</span>
+        <i class='bx bx-cart add-cart'></i>
       </div>
-       <!----Box 3---->
+
+  
+      <!-- Product 4 -->
       <div class="product-box">
-        <img src="products/airmaxplus.jpg" class="product-img">
-        <h2 class="product-tittle">AirMax Plus</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
-      </div>
-       <!--Box 4--->
-      <div class="product-box">
-        <img src="products/basketball.jpg" class="product-img">
+        <img src="products/basketball.jpg" alt="Product 4" class="product-img">
         <h2 class="product-tittle">Basketball Shoes</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
+        <span class="price">$150.75</span>
+        <i class='bx bx-cart add-cart'></i>
       </div>
-       <!----Box 5---->
+
+      <!-- Product 5 -->
       <div class="product-box">
-        <img src="products/cortez.jpg" class="product-img">
+        <img src="products/cortez.jpg" alt="Product 5" class="product-img">
         <h2 class="product-tittle">Nike Cortez</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
+        <span class="price">$185.50</span>
+        <i class='bx bx-cart add-cart'></i>
       </div>
-       <!----Box 6---->
+
+      <!-- Product 6 -->
       <div class="product-box">
-        <img src="products/force.jpg" class="product-img">
+        <img src="products/shoes.jpg" alt="Product 6" class="product-img">
+        <h2 class="product-tittle">Running Shoes</h2>
+        <span class="price">$95.40</span>
+        <i class='bx bx-cart add-cart'></i>
+      </div>
+      
+      <!-- Product 7 -->
+      <div class="product-box">
+        <img src="products/force.jpg" alt="Product 7" class="product-img">
         <h2 class="product-tittle">Air Force 1</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
+        <span class="price">$105.60</span>
+        <i class='bx bx-cart add-cart'></i>
       </div>
-       <!----Box 7---->
-      <div class="product-box">
-        <img src="products/sbdunk.jpg" class="product-img">
-        <h2 class="product-tittle">SB Dunk</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
-      </div>
-       <!----Box 8---->
-      <div class="product-box">
-        <img src="products/shoes.jpg" class="product-img">
-        <h2 class="product-tittle">Running</h2>
-        <span class="price">$20</span>
-        <i class='bx bx-shopping-bag add-cart'></i>
-      </div>
+
     </div>
   </section>
-  <!---Link to JS-->
-  <script src="js/script.js"></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
